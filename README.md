@@ -2,19 +2,29 @@
 ## ~~colored fireworks~~
 
 Here is the original code.
+
 ↓
 
 void setup() {
+
   size(1000, 800);
-  background(10, 10, 10, 10);
+
+background(10, 10, 10, 10);
+
 }
+
 void draw() {
-  float xx = random(width);
-  float yy = random( height);
-  float dia = random(30, 70);
-  float alpha = random(180, 255);
+
+float xx = random(width);
+
+float yy = random( height);
+
+float dia = random(30, 70);
+
+float alpha = random(180, 255);
 
   if (mousePressed) {
+
     rectMode(CENTER);
     fill(226,32,53, alpha);
     noStroke();
@@ -42,4 +52,5 @@ void draw() {
     rectMode(CORNER);
     rect(0, 0, width, height);
   }
+
 }
